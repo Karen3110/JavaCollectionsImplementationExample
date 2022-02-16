@@ -1,44 +1,44 @@
 package com.company.collections.collectionsUtil;
 
-public class Node {
-    private int info;
-    private Node prev;
-    private Node next;
+public class Node<T> {
+    private T info;
+    private Node<T> prev;
+    private Node<T> next;
 
 
-    public Node(int info, Node prev, Node next) {
+    public Node(T info, Node<T> prev, Node<T> next) {
         this.info = info;
         this.prev = prev;
         this.next = next;
     }
 
-    public int getInfo() {
+    public T getInfo() {
         return info;
     }
 
-    public void setInfo(int info) {
+    public void setInfo(T info) {
         this.info = info;
     }
 
-    public Node getPrev() {
+    public Node<T> getPrev() {
         return prev;
     }
 
-    public void setPrev(Node prev) {
+    public void setPrev(Node<T> prev) {
         this.prev = prev;
     }
 
-    public Node getNext() {
+    public Node<T> getNext() {
         return next;
     }
 
-    public void setNext(Node next) {
+    public void setNext(Node<T> next) {
         this.next = next;
     }
 
     @Override
     public String toString() {
-        return "Node{" +
+        return "Node<T>{" +
                 "info=" + info +
                 '}';
     }
